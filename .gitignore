@@ -8,3 +8,9 @@ Thumbs.db
 
 # Ignore node modules if added later
 node_modules/
+dist/
+
+# Local environment variables
+.env
+.env.*
+!.env.example

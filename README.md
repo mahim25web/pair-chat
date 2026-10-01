@@ -19,6 +19,14 @@ A lightweight, real-time, end-to-end web chat application designed strictly for 
 
 ## Getting Started
 
-1. Clone or download the repository:
+1. Install dependencies:
    ```bash
-   git clone [https://github.com/mahim25web/pair-chat.git](https://github.com/mahim25web/pair-chat.git)
+   npm install
+   ```
+2. Create a local `.env` file from `.env.example` and set `VITE_FIREBASE_API_KEY` to your Firebase web API key.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+Firebase web API keys are included in browser code and are not secrets. Restrict the key in Google Cloud and secure access with Firebase Realtime Database rules; never put service-account credentials or other private server keys in this frontend project.
