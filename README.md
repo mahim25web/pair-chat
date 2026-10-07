@@ -1,32 +1,40 @@
-# PairChat — Private Messenger
+# PairChat
 
-A lightweight, real-time, end-to-end web chat application designed strictly for two users per room. PairChat requires no server-side backend setups, running directly via Firebase Realtime Database.
+**PairChat** is a lightweight, real-time private messaging web application built for seamless, end-to-end 1-on-1 communication. It operates entirely without a traditional custom backend server, leveraging Firebase Realtime Database for instant synchronization and session management.
 
-## Features
+---
 
-* **Strict 2-Person Limit:** Rooms automatically block entry once two active participants join.
-* **Real-time Messaging:** Instant message delivery and timestamping using Firebase Realtime Database.
-* **Presence Tracking:** Live online/offline status indicators for your chat partner.
-* **Browser Notifications & Audio Ping:** Audio alert and browser desktop notifications for incoming messages when the window is unfocused.
-* **Zero Authentication Required:** Simple room creation and user join flow using custom UIDs and optional display names.
-* **Responsive Dark Theme UI:** Styled with a dark aesthetic and custom controls using modern CSS and standard JavaScript modules.
+## ⚡ Key Features
 
-## Tech Stack
+- **Strict 2-Person Limit:** Built-in room capacity enforcement that automatically prevents third-party entry once two participants have joined.
+- **Real-Time Sync:** Instant messaging and precise timestamps powered by Firebase Realtime Database.
+- **Live Presence Indicators:** Dynamic online/offline status tracking for active room participants.
+- **Desktop & Audio Alerts:** Native browser notifications and sound pings for incoming messages when the window is unfocused.
+- **Zero Authentication Required:** Instant room creation and joining flow using generated user IDs and optional custom display names.
+- **Modern Dark UI:** Responsive layout with custom interface components crafted using modern CSS and standard JavaScript ES6 modules.
 
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+ Modules)
-* **Backend / Database:** Firebase Realtime Database (v10.12.2)
-* **Typography:** Plus Jakarta Sans (Google Fonts)
+---
 
-## Getting Started
+## 🛠️ Tech Stack
 
-1. Install dependencies:
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+ Modules)
+- **Build Tool:** Vite
+- **Database / Sync:** Firebase Realtime Database (`v10.12.2`)
+- **Typography:** Plus Jakarta Sans (Google Fonts)
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the application locally on your machine:
+
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed on your environment.
+
+### Installation & Setup
+
+1. **Clone the repository:**
    ```bash
-   npm install
-   ```
-2. Create a local `.env` file from `.env.example` and set `VITE_FIREBASE_API_KEY` to your Firebase web API key.
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-Firebase web API keys are included in browser code and are not secrets. Restrict the key in Google Cloud and secure access with Firebase Realtime Database rules; never put service-account credentials or other private server keys in this frontend project.
+   git clone [https://github.com/mahim25web/pair-chat.git](https://github.com/mahim25web/pair-chat.git)
+   cd pair-chat
